@@ -11,7 +11,7 @@ int main(){
     float promedio=0;
     uint16_t canttotal;
     float promediofinal;
-    uint8_t pescador=0;
+    uint8_t pescador;
     float p1;
     float p2;
     float p3;
@@ -27,7 +27,7 @@ int main(){
         }
         switch (pescador){
         case 1:
-            printf("¿Cual es la longitud del pez? (en cm)?\n");
+            printf("¿Cual es la longitud del pez? (en cm)\n");
             scanf("%f", &p1);
             if(p1>=12){
                 promedio=promedio+p1;
@@ -40,7 +40,7 @@ int main(){
             }
             break;
         case 2:
-            printf("¿Cual es la longitud del pez? (en cm)?\n");
+            printf("¿Cual es la longitud del pez? (en cm)\n");
             scanf("%f", &p2);
              if(p2>=12){
                 promedio=promedio+p2;
@@ -53,7 +53,7 @@ int main(){
             }
             break;
         case 3:
-            printf("¿Cual es la longitud del pez? (en cm)?\n");
+            printf("¿Cual es la longitud del pez? (en cm)\n");
             scanf("%f", &p3);
              if(p3>=12){
                 promedio=promedio+p3;
@@ -120,7 +120,7 @@ int main(){
                 if(pez1>pez2){
                     printf("Los pescadores 1 y 3 han obtenido cada uno la pieza de mayor tamaño, con una longitud de %fcm.\n", pez1);
                 }else{
-                    printf("El pescador que obtuvo la pieza de mayor tamaño es el 2, con una longitud de %fcm.\n", pez2);
+                    printf("El pescador que obtuvo la pieza de mayor longitud es el 2, con una distancia de %fcm.\n", pez2);
                 }
             }
         }else{
