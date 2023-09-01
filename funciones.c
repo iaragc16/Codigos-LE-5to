@@ -8,14 +8,15 @@
 CONSIGNA: Escribir un programa que calcule el modulo de un numero
 complejo y su angulo (fase) ingresando du parte real y su parte imaginaria
 */
-void bienvenida();
+void bienvenida(); /* prototipo de la funcion, es necesario cuando defino la funcion mas tarde que 
+cuando la llamo. Escribo void ya que no necesito que la funcion devuelva ningun valor*/
 float ingreso_parte_real();
 float ingreso_parte_imaginar();
 float modulo (float,float);
 float fase (float,float);
 void mostrar_resultados(float,float);
 
-int main(){
+int main(){  // es la funcion principal, siempre debe estar en un codigo en c
     float real, img, mod, fas;
 
     bienvenida();
