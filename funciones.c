@@ -10,11 +10,12 @@ complejo y su angulo (fase) ingresando du parte real y su parte imaginaria
 */
 void bienvenida(); /* prototipo de la funcion, es necesario cuando defino la funcion mas tarde que 
 cuando la llamo. Escribo void ya que no necesito que la funcion devuelva ningun valor*/
-float ingreso_parte_real();
+float ingreso_parte_real(); /* porque me devuelve un float*/
 float ingreso_parte_imaginar();
 float modulo (float,float);
-float fase (float,float);
-void mostrar_resultados(float,float);
+float fase (float,float); 
+void mostrar_resultados(float,float); /* void porque no devuelve nada; 
+float,float porque usa info de dos variables que son float*/
 
 int main(){  // es la funcion principal, siempre debe estar en un codigo en c
     float real, img, mod, fas;
