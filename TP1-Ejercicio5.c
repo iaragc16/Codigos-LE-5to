@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <math.h>
-#define PI 3.1416
+#define PI 3.14159265
 
 /*CONSIGNA: Escribir un programa que ingresada una tensión y una corriente (con su modulo y 
 ángulo) y la frecuencia de trabajo, informe el valor de la impedancia (parte real y parte 
@@ -37,7 +37,7 @@ int main(){
     float real = calcular_impedancia_real(impmod, impang);
     float imag = calcular_impedancia_imaginario(impmod, impang);
     mostrar_impedancia(real, imag);
-    if((frec) == 0 ){
+    if(frec == 0 ){
         respuesta_solo_resistiva(real);
     }else{
         if(imag == 0){
@@ -131,7 +131,6 @@ void respuesta_inductor_resistencia(float real, float imag, float frec){
 }
 
 void respuesta_capacitor_resistencia(float real, float imag, float frec){
-    float im = imag*(-1);
-    float cap = 1/(im*2*PI*frec);
+    float cap = -1/(imag*2*PI*frec);
     printf("\nEl circuito tiene una capacitancia de %ff y una resistencia de %f ohms", cap, real);
 }
